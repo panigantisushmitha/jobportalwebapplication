@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply for {{ job.title }}</title>
+</head>
+<body>
+
+    <h1>Apply for {{ job.title }}</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <label>Name:</label><br>
+        <input type="text" name="name" required>
+        <br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <label>Resume:</label><br>
+        <input type="file" name="resume" required>
+        <br><br>
+
+        <button type="submit">Submit Application</button>
+    </form>
+
+    <br>
+    <a href="/job/{{ job.id }}/">← Back to Job</a>
+
+</body>
+</html>
