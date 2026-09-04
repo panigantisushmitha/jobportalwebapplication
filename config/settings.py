@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-xl2j-!q_5dc8957n8o(3)0nysmvyci9_$%_(db0t#wp-+xzy!+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['jobportalwebapplication-1.onrender.com']
-
+ALLOWED_HOSTS = ['jobportalwebapplication-1.onrender.com', '127.0.0.1', 'localhost']
 
 # Application definition
 
